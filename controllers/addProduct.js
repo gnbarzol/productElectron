@@ -8,9 +8,9 @@ form.addEventListener('submit', e => {
     const dataIsOk = validateData(name.value, tipo.value, precio.value);
     if(dataIsOk) {
         const newProduct = {
-            name: name.value,
-            tipo: tipo.value,
-            precio: precio.value
+            name: name.value.trim(),
+            tipo: tipo.value.trim(),
+            precio: precio.value.trim()
         }
 
         // A través de ipcRenderer envio un archivo con el evento new-product al mainProcesses

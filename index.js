@@ -61,7 +61,7 @@ function createProductWindow() {
         }
     });
 
-    // productWindow.setMenu(null);
+    productWindow.setMenu(null);
     productWindow.loadFile('views/addProduct.html');
 
     productWindow.on('closed', () => {
@@ -87,9 +87,9 @@ const mainMenu = [
                 }
             },
             {
-                label: 'Eliminar productos',
+                label: 'Limpiar tabla',
                 click() {
-                    console.log('Click delete products');
+                    mainWindow.webContents.send('clear-products');
                 }
             },
             {
