@@ -19,7 +19,7 @@ ipcRenderer.on('new-product', (e, newProduct) => {
     bodyTable.innerHTML += item;
     setTimeout(() => {
         document.getElementById(name).classList.remove('animate__animated', 'animate__backInDown');
-    }, 1000);
+    }, 600);
 });
 
 ipcRenderer.on('clear-products', () => {
