@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
+    <title>Nuevo producto</title>
+</head>
+
+<body class="bg-light">
+    <div class="container mt-3">
+        <form>
+            <div class="form-group">
+                <label for="nameProduct">Nombre</label>
+                <input type="text" class="form-control" id="nameProduct" aria-describedby="nameHelp" name="name" autofocus required>
+                <small id="nameHelp" class="form-text text-muted">Escribe el nombre del producto</small>
+            </div>
+            <div class="form-group">
+                <label for="tipoProduct">Tipo</label>
+                <input type="text" class="form-control" id="tipoProduct" aria-describedby="tipoHelp" name="tipo" required>
+                <small id="tipoHelp" class="form-text text-muted">Escribe el tipo de producto</small>
+            </div>
+            <div class="form-group">
+                <label for="priceProduct">Precio</label>
+                <input type="number" min=0 class="form-control" id="priceProduct" aria-describedby="precioHelp" name="precio" required>
+                <small id="precioHelp" class="form-text text-muted">Escribe el precio del producto</small>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+    </div>
+
+    <script src="../controllers/addProduct.js"></script>
+</body>
+
+</html>

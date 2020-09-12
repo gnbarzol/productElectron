@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Products Electron</title>
+</head>
+<body class="bg-primary">
+    <div class="container text-white">
+        <h5 class="text-center mt-3 mb-3" onclick="console.log('click')">Productos disponibles</h5>
+        <table class="table table-hover" >
+            <thead class="text-white">
+                <tr>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Tipo</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="body-table"></tbody>
+        </table>
+    </div>
+
+    <script src="../controllers/home.js"></script>
+</body>
+</html>
